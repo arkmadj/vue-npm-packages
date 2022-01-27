@@ -1,0 +1,76 @@
+.circle {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.number {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #0b8f99;
+}
+
+.svg-circle1 {
+  fill: none;
+  stroke: rgba(11, 143, 153, 0.1);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-linecap: butt;
+}
+
+.svg-circle2 {
+  fill: none;
+  stroke: #0b8f99;
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-linecap: butt;
+
+  animation: anim 1s linear alternate;
+}
+
+.svg {
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  transform: rotate(-90deg);
+  svg {
+    height: 160px;
+    width: 160px;
+  }
+}
+
+.low {
+  .number{
+    color: #F71455
+  }
+  .svg-circle1{
+    stroke: rgba(247, 20, 85, 0.1);
+  }
+  .svg-circle2{
+    stroke: #F71455
+  }
+}
+
+.medium {
+  .number{
+    color: #FFCC00
+  }
+  .svg-circle1{
+    stroke: rgba(255, 204, 0, 0.1);
+  }
+  .svg-circle2{
+    stroke: #FFCC00
+  }
+}
+
+@keyframes anim {
+  0% {
+    stroke-dashoffset: 440;
+  }
+}

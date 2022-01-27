@@ -1,0 +1,70 @@
+.q-table__container {
+  :deep th {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #63666F;
+    border-bottom: 1px solid #DEDEDE;
+  }
+  :deep .q-table--col-auto-width {
+    border-bottom: unset;
+  }
+  :deep .q-table__bottom {
+    border-top: unset;
+  }
+}
+
+.no-data-style {
+  height: 100%;
+  font-style: normal;
+  font-weight: 343;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100%;
+  color: #63666F;
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  letter-spacing: 0.3px;
+
+  color: #9FA2B4;
+  .per-row {
+    margin: 0 10px;
+    :deep .q-field__native {
+      color: #9FA2B4;
+    }
+    :deep .q-select__dropdown-icon {
+      color: #9FA2B4;
+      font-size: 18px;
+    }
+    :deep .q-field__control {
+      min-height: 30px;
+      height: 30px;
+    }
+    :deep .q-field__marginal {
+      min-height: 30px;
+      height: 30px;
+    }
+    :deep .q-field__native {
+      min-height: 30px;
+      height: 30px;
+    }
+  }
+  .page-arrow {
+    font-size: 14px;
+    color: #9FA2B4;
+    cursor: pointer;
+  }
+}
