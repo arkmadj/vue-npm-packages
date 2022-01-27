@@ -1,11 +1,11 @@
 {
-  "name": "b54-components",
+  "name": "@ahmad/54-components",
   "version": "0.0.1",
   "description": "b54-components",
   "productName": "b54 components",
   "author": "ahmadjinadu@gmail.com",
   "private": false,
-  "repository": "",
+  "repository": "github.com:<arkmadj>/vue-npm-packages",
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint --ext .js,.ts,.vue ./",
